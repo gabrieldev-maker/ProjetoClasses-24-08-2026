@@ -20,5 +20,7 @@ public class Main {
 
         System.out.println(func1);
         System.out.println(func2);
+        System.out.println("João ganha mais que Maria? " + func1.ganhaMais(func2));
+        System.out.println("Maria ganha mais que João? " + func2.ganhaMais(func1));
     }
 }

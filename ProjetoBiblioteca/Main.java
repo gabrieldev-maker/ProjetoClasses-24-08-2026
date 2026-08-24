@@ -1,4 +1,4 @@
-package Exercicio5;
+package ProjetoBiblioteca;
 
 public class Main {
     public static void main(String[] args){
@@ -13,6 +13,5 @@ public class Main {
 
         biblioteca.emprestarLivro("O Senhor dos Anéis");
 
-        biblioteca.ListarLivrosDisponiveis();
     }
 }

@@ -16,14 +16,21 @@ public class Funcionario {
         this.matricula = matricula;
         this.salario = salario;
     }
+    void aumentarSalario(Double percentual) {
+        salario = salario + (salario * percentual / 100);
+    }
+    public boolean ganhaMais(Funcionario outro) {
+    return this.salario > outro.salario;
+    }
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", cargo='" + cargo + '\'' +
-                ", matricula='" + matricula + '\'' +
-                ", salario=" + salario +
-                '}';
+        return "Funcionario [nome=" + nome + ", cargo=" + cargo + ", matricula=" + matricula + ", salario=" + salario
+                + ", toString()=" + super.toString() + "]";
     }
-}
+
+    
+    }
+
+    
+    
